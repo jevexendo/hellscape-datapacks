@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Greater Potion of Regeneration\",\"color\":\"aqua\",\"italic\":false}'},custom_potion_effects:[{id:\"minecraft:regeneration\",amplifier:1b,duration:600}],Potion:\"minecraft:awkward\",CustomPotionColor:13458603}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

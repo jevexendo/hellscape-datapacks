@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "find": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{CustomEnchantments:[{id:\"concealed\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "title": {
+            "text": "Concealed                ",
+            "color": "aqua"
+        },
+        "description": {
+            "color": "white",
+            "text": "When the user slays a mob, they gain limited Stealth. While Stealthed, the user is harder to detect and gains a temporary damage boost."
+        },
+        "icon": {
+            "item": "minecraft:oak_leaves"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "cartographer_custom_enchantments:descriptions/passive/concealed"
+    },
+    "parent": "cartographer_custom_enchantments:passive/cleansing"
+}

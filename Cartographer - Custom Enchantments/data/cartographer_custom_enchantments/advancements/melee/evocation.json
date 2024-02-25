@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Evocation                ",
+            "color": "aqua"
+        },
+        "description": {
+            "color": "white",
+            "text": "The weapon stores charges over time and from kills. Charges are used on crit, sneak, and sprint attacks to create Evoker fangs."
+        },
+        "icon": {
+            "item": "minecraft:shears"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "find": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{CustomEnchantments:[{id:\"evocation\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "cartographer_custom_enchantments:descriptions/melee/evocation"
+    },
+    "parent": "cartographer_custom_enchantments:melee/echo"
+}

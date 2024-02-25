@@ -1,0 +1,1 @@
+execute if entity @s[tag=ca.trap_spawner_marker] run function cartographer_mimics:loop/tick/markers

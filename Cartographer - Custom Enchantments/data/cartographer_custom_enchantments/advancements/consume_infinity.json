@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "on_block": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "nbt": "{CustomEnchantments:[{id:\"infinity\",lvl:1b}]}"
+            }
+          }
+        ]
+      }
+    },
+    "consumed": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "nbt": "{CustomEnchantments:[{id:\"infinity\",lvl:1b}]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "on_block",
+      "consumed"
+    ]
+  ],
+  "rewards": {
+    "function": "cartographer_custom_enchantments:enchant_effects/infinity/consume"
+  }
+}

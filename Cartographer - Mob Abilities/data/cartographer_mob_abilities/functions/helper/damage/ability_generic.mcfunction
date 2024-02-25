@@ -1,0 +1,1 @@
+$damage @p $(damage) cartographer_mob_abilities:ability_generic by @s

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Zephyrous                ",
+            "color": "white"
+        },
+        "description": {
+            "text": "Mob attacks or effects create clouds that launch players into the air.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:white_wool"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "found1": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"ca.zephyrous\"]}"
+                }
+            }
+        }
+    },
+    "parent": "cartographer_mob_abilities:trait/hit/webbing"
+}

@@ -1,0 +1,1 @@
+execute if entity @s[predicate=cartographer_custom_statuses:is_slow_falling] unless predicate bb:cant_crit run tag @s add pot_add_crit

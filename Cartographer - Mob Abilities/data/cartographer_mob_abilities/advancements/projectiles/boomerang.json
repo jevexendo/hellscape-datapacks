@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Boomerang                ",
+            "color": "white"
+        },
+        "description": {
+            "text": "Shoots a short ranged projectile that returns to the shooter.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:wooden_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "found1": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"ca.sh_boomerang\"]}"
+                }
+            }
+        }
+    },
+    "parent": "cartographer_mob_abilities:projectiles/projectiles"
+}

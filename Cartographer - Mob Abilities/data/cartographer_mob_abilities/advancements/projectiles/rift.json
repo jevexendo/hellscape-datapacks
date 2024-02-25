@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Rift                         ",
+            "color": "white"
+        },
+        "description": {
+            "text": "Shoots a ground rupture that travels across the earth.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:raw_iron"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "found": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"ca.sh_rift\"]}"
+                }
+            }
+        }
+    },
+    "parent": "cartographer_mob_abilities:projectiles/needle"
+}

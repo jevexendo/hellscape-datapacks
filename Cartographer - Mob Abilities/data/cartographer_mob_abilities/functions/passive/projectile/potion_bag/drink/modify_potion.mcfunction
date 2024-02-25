@@ -1,0 +1,3 @@
+data modify entity @s HandItems[0].tag.Potion set from storage cartographer_mob_abilities:potion_bag_drink data.potion_bag_drink.tag.Potion
+data modify entity @s HandItems[0].tag.Color set from storage cartographer_mob_abilities:potion_bag_drink data.potion_bag_drink.tag.CustomPotionColor
+data modify entity @s HandItems[0].tag.custom_potion_effects set from storage cartographer_mob_abilities:potion_bag_drink data.potion_bag_drink.tag.custom_potion_effects

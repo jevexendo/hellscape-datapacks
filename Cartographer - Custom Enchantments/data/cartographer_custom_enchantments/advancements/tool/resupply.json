@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "find": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{CustomEnchantments:[{id:\"resupply\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "title": {
+            "text": "Resupply                 ",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "When you break a spawner with this tool, you have a chance to gain various drops.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "cartographer_custom_enchantments:descriptions/tool/resupply"
+    },
+    "parent": "cartographer_custom_enchantments:tool/eruption"
+}

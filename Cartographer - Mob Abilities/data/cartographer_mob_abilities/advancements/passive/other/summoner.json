@@ -1,0 +1,12 @@
+{
+    "criteria": {
+        "found": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"ca.summon_swap\"]}"
+                }
+            }
+        }
+    }
+}

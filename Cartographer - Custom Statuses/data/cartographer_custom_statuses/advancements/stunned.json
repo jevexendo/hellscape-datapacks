@@ -1,0 +1,51 @@
+{
+    "display": {
+        "title": {
+            "text": "Stunned                  ",
+            "color": "#57dec0"
+        },
+        "description": {
+            "text": "Affected mob cannot move, attack, or use abilities. In progress abilities are interrupted.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:yellow_concrete"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "found1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "nbt": "{apply_status:[{id:\"stunned\"}]}"
+                }
+              ]
+            }
+          },
+          "found2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "nbt": "{custom_statuses:[{id:\"stunned\"}]}"
+                }
+              ]
+            }
+          }
+    },
+    "requirements": [
+        [
+            "found1",
+            "found2"
+        ]
+    ],
+    "rewards": {
+        "function": "cartographer_custom_statuses:descriptions/stunned"
+    },
+    "parent": "cartographer_custom_statuses:shock"
+}

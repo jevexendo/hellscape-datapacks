@@ -1,0 +1,51 @@
+{
+    "display": {
+        "title": {
+            "text": "Infection                ",
+            "color": "#57dec0"
+        },
+        "description": {
+            "text": "Affected mob takes damage every second. They are also slowed and weakened depending on how much health they are missing. When they die, the effect is spread to un-infected enemies.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:dragon_breath"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "find1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{custom_statuses:[{id:\"infection\"}]}"
+                    }
+                ]
+            }
+        },
+        "find2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "nbt": "{apply_status:[{id:\"infection\"}]}"
+                }
+              ]
+            }
+          }
+    },
+    "requirements": [
+        [
+            "find1",
+            "find2"
+        ]
+    ],
+    "rewards": {
+        "function": "cartographer_custom_statuses:descriptions/infected"
+    },
+    "parent": "cartographer_custom_statuses:vulnerability"
+}

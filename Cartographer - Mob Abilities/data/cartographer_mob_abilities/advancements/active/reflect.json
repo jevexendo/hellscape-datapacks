@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "text": "Reflect                  ",
+            "color": "white"
+        },
+        "description": {
+            "text": "The enemy briefly prepares, then attacks several times. While attacking, the enemy is invulnerable.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:shield"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "found1": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"ca.reflect\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "found1"
+        ]
+    ],
+    "rewards": {
+        "function": "cartographer_mob_abilities:descriptions/active/reflect"
+    },
+    "parent": "cartographer_mob_abilities:active/quickdraw"
+}

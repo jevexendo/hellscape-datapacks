@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Thrusting                  ",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "The weapon stores charges over time and from kills. Charges are used when attacking and sprint attacking to pierce damage to mobs behind your target. Those mobs take a portion of the weapon's damage.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:stone_shovel"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "find": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{CustomEnchantments:[{id:\"thrusting\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "cartographer_custom_enchantments:descriptions/melee/thrusting"
+    },
+    "parent": "cartographer_custom_enchantments:melee/sweeping"
+}

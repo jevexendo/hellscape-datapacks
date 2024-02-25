@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Magic Missile            ",
+            "color": "white"
+        },
+        "description": {
+            "text": "Shoots a missle that chases players.",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:ender_eye"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "found": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"ca.sh_magic_missile\"]}"
+                }
+            }
+        }
+    },
+    "parent": "cartographer_mob_abilities:projectiles/lightning"
+}

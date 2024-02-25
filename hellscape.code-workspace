@@ -1,0 +1,107 @@
+{
+  "folders": [
+    {
+      "path": "Cartographer - Lib - Black Box Library (RockNRed)",
+      "name": "Library - Black Box"
+    },
+    {
+      "path": "Cartographer - Lib - Delta (BigPapi)",
+      "name": "Library - Delta"
+    },
+    {
+      "path": "Cartographer - Lib - Display Item Entity System (RockNRed)",
+      "name": "Library - DIES"
+    },
+    {
+      "path": "Cartographer - Lib - Entity Id and Hit Detection System (gibbsly)",
+      "name": "Library - EHID"
+    },
+    {
+      "path": "Cartographer - Lib - Mob Motion (Suso and CooleyBrekka)",
+      "name": "Library - Mob Motion"
+    },
+    {
+      "path": "Cartographer - Charon",
+      "name": "Cartographer - Charon"
+    },
+    {
+      "path": "Cartographer - Core",
+      "name": "Cartographer - Core"
+    },
+    {
+      "path": "Cartographer - Custom Enchantments",
+      "name": "Cartographer - Custom Enchantments"
+    },
+    {
+      "path": "Cartographer - Custom Statuses",
+      "name": "Cartographer - Custom Statuses"
+    },
+    {
+      "path": "Cartographer - Loot Additions",
+      "name": "Cartographer - Loot Additions"
+    },
+    {
+      "path": "Cartographer - Loot Table Tweaks",
+      "name": "Cartographer - Loot Table Tweaks"
+    },
+    {
+      "path": "Cartographer - Mimics and Traps",
+      "name": "Cartographer - Mimics and Traps"
+    },
+    {
+      "path": "Cartographer - Mob Abilities",
+      "name": "Cartographer - Mob Abilities"
+    },
+    {
+      "path": "Cartographer - Repair Stations",
+      "name": "Cartographer - Repair Stations"
+    },
+    {
+      "path": ".",
+      "name": "Workspace"
+    }
+  ],
+  "settings": {
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.detectIndentation": false,
+      "editor.formatOnSave": true,
+      "editor.indentSize": 2,
+      "editor.tabSize": 2
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.detectIndentation": false,
+      "editor.formatOnSave": true,
+      "editor.indentSize": 2,
+      "editor.tabSize": 2
+    },
+    "files.associations": {
+      "**/*.mcmeta": "json"
+    },
+    "files.exclude": {
+      "Cartographer - Lib - Black Box Library (RockNRed)": true,
+      "Cartographer - Lib - Delta (BigPapi)": true,
+      "Cartographer - Lib - Display Item Entity System (RockNRed)": true,
+      "Cartographer - Lib - Entity Id and Hit Detection System (gibbsly)": true,
+      "Cartographer - Lib - Mob Motion (Suso and CooleyBrekka)": true,
+      "Cartographer - Charon": true,
+      "Cartographer - Core": true,
+      "Cartographer - Custom Enchantments": true,
+      "Cartographer - Custom Statuses": true,
+      "Cartographer - Loot Additions": true,
+      "Cartographer - Loot Table Tweaks": true,
+      "Cartographer - Mimics and Traps": true,
+      "Cartographer - Mob Abilities": true,
+      "Cartographer - Repair Stations": true
+    },
+    "prettier.tabWidth": 2
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "minecraftcommands.syntax-mcfunction",
+      "spgoding.datapack-language-server"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Greater Potion of Healing\",\"color\":\"aqua\",\"italic\":false}'},custom_potion_effects:[{id:\"minecraft:instant_health\",amplifier:0b,duration:1},{id:\"minecraft:regeneration\",amplifier:2b,duration:40}],Potion:\"minecraft:awkward\",CustomPotionColor:16741249}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

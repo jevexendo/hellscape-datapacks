@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Greater Potion of Jump Boost\",\"color\":\"aqua\",\"italic\":false}'},custom_potion_effects:[{id:\"minecraft:jump_boost\",amplifier:2b,duration:6000}],Potion:\"minecraft:awkward\",CustomPotionColor:2293580}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
